@@ -1,0 +1,6 @@
+<resources>
+    <string name="frame_button">Фрейм кнопка</string>
+    <string name="liner_buttin">Линер кнопка</string>
+    <string name="relative_button">Релатив кнопка</string>
+    <string name="main_editText">Текст...</string>
+</resources>
