@@ -1,0 +1,21 @@
+<resources>
+    <!--    first activity-->
+    <string name="app_name">work_4</string>
+    <string name="person_first_name">First name</string>
+    <string name="person_last_name">Last name</string>
+    <string name="first_activity_button">Next</string>
+
+    <!--    second activity-->
+    <string name="second_activity_first_name">First name</string>
+    <string name="second_activity_last_name">Last name</string>
+    <string name="add_a_subject">Subject</string>
+    <string name="press_button_to_add_subject">Enter the information</string>
+
+    <!--    third activity-->
+    <string name="day">Day</string>
+    <string name="time">Time</string>
+    <string name="comment">Comment</string>
+    <string name="OK">OK</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
