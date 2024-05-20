@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">3 работа</string>
+    <string name="button">кнопка</string>
+    <string name="text_view">текст вью</string>
+</resources>

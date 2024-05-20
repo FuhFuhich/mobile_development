@@ -1,13 +1,11 @@
 package com.example.work_2;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,28 +20,25 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate: MainActivity");
 
         Button button = findViewById(R.id.buttonSubmit);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EditText fioEditText = findViewById(R.id.editTextFullName);
-                String fio = fioEditText.getText().toString();
+        button.setOnClickListener(v -> {
+            EditText fioEditText = findViewById(R.id.editTextFullName);
+            String fio = fioEditText.getText().toString();
 
-                EditText groupEditText = findViewById(R.id.editTextGroupNumber);
-                String group = groupEditText.getText().toString();
+            EditText groupEditText = findViewById(R.id.editTextGroupNumber);
+            String group = groupEditText.getText().toString();
 
-                EditText ageEditText = findViewById(R.id.editTextAge);
-                int age = Integer.parseInt(ageEditText.getText().toString());
+            EditText ageEditText = findViewById(R.id.editTextAge);
+            int age = Integer.parseInt(ageEditText.getText().toString());
 
-                EditText gradeSpinner = findViewById(R.id.editTextGrade);
-                String grade = gradeSpinner.getText().toString();
+            EditText gradeSpinner = findViewById(R.id.editTextGrade);
+            String grade = gradeSpinner.getText().toString();
 
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                intent.putExtra("fio", fio);
-                intent.putExtra("group", group);
-                intent.putExtra("age", age);
-                intent.putExtra("grade", grade);
-                startActivity(intent);
-            }
+            Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+            intent.putExtra("fio", fio);
+            intent.putExtra("group", group);
+            intent.putExtra("age", age);
+            intent.putExtra("grade", grade);
+            startActivity(intent);
         });
     }
 

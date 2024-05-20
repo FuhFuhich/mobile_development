@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/frame_textView"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="90dp"
         android:text="TextView"
         android:textSize="20sp" />
 
